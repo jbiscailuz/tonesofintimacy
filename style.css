@@ -30,7 +30,7 @@ div.scratch-layer {
 }
 
 div.actual {
-  background-color: #6A9DFF;
+  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -69,8 +69,8 @@ div.cursor {
   left: -10px;
   width: 10px;
   height: 10px;
-  border-radius: 50%;
-  background-color: #29044a;
+  border-radius: 90%;
+  background-color: red;
   transform: translate(-50%, -50%);
   transition: width 0.25s, height 0.25s;
 }

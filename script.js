@@ -1,3 +1,5 @@
+// superhi
+
 const w = window.innerWidth
 const h = window.innerHeight
 const dpi = window.devicePixelRatio
