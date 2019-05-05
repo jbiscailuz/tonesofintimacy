@@ -47,10 +47,11 @@
             });
             //////////////////CREATE NEW AUDIO ELEMENT IN THE HTML WITH SOURCE FROM FIREBASE STORAGE///////////////
             //set variables for grid 
-            var gridRowStart = 3;
-            var gridRowEnd = 4;
-            var gridRowStart2 = 4;
-            var gridRowEnd2 = 5;
+            var gridRowStart = 2;
+            var gridRowEnd = 3;
+            var gridRowStart2 = 3;
+            var gridRowEnd2 = 4;
+            var grid = document.getElementsByClassName("AllGrid")[0];
 
             function createNewAudio(key, url) {
                 console.log(url.name);
@@ -92,10 +93,8 @@
                     div1.style.setProperty("grid-row-start", gridRowStart2);
                     div1.style.setProperty("grid-row-end", gridRowEnd2);
                 }
-                var grid = document.getElementsByClassName("AllGrid")[0];
+
                 console.log(grid);
-                grid.style.cssText =
-                    "display: grid;grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;margin-bottom: -40px;";
 
                 grid.appendChild(div1);
                 if (url.number % 2 != 0) {
@@ -109,6 +108,9 @@
                     console.log("grid row start EVEN:" + gridRowStart2);
                     console.log("grid row END EVEN:" + gridRowEnd2);
                 }
+                grid.style.cssText =
+                    "display: grid;grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;grid-template-rows: 5% ;margin-bottom: -10px;";
+
             }
         </script>
 
